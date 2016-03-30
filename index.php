@@ -59,14 +59,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <ul id="tab1" class="nav nav-tabs">
-                        <li class="active"><a href="#tab1-item1" data-toggle="tab">Jogo</a></li>
+<!--                    <ul id="tab1" class="nav nav-tabs">
+                        <li class="active"><a href="#tab1-item1" data-toggle="tab">Sistema</a></li>
                         <li><a href="#tab1-item2" data-toggle="tab">Código</a></li>
                         <li><a href="#tab1-item3" data-toggle="tab">Sobre</a></li>
                         <li><a href="#tab1-item4" data-toggle="tab">Log</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade active in" id="tab1-item1">
+                    </ul>-->
+<!--                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tab1-item1">-->
                             <div class="col-sm-3 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <form id="parametros">
                                     <div class="form-group">
@@ -110,8 +110,8 @@
                                     <h1 id="letra-resultado"></h1>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab1-item2">
+                        <!--</div>-->
+<!--                        <div class="tab-pane fade" id="tab1-item2">
                             <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <h2 class="page-header">Código <strong>Fonte</strong></h2>
                                 <div class="col-md-12">
@@ -145,8 +145,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab1-item3">
+                        </div>-->
+<!--                        <div class="tab-pane fade" id="tab1-item3">
                             <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <h2 class="page-header">Sobre o Desafio <strong>8 Rainhas</strong></h2>
                                 <blockquote>
@@ -199,14 +199,14 @@
                                     do curso de Ciência da Computação da UNISUL (Universidade do Sul de Santa Catarina).</footer>
                                 </blockquote>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab1-item4">
+                        </div>-->
+<!--                        <div class="tab-pane fade" id="tab1-item4">
                             <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <h2 class="page-header">Log de <strong>Testes</strong></h2>
                                 <pre><code id="log" data-language="shell"></code></pre>
                             </div>
-                        </div>
-                    </div>
+                        </div>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
