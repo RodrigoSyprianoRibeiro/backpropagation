@@ -93,8 +93,9 @@ $(function () {
       async: true,
       data: {letra: getLetra()},
       success: function(response) {
+        letra = (response !== false) ? response : 'Desconhecida';
         $("#resultado").removeClass("hide");
-        $("#letra-resultado").text(response);
+        $("#letra-resultado").text(letra);
       },
       error: function() {
         $("#resultado").removeClass("hide");

@@ -32,7 +32,6 @@ class Letra
     }
 
     function getNomePorCodigoGrupo($vetorCodigoGrupo) {
-
         foreach ($vetorCodigoGrupo AS $indice => $codigo) {
             $vetorCodigoGrupo[$indice] = round($codigo);
         }
