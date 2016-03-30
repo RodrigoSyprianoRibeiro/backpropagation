@@ -180,7 +180,7 @@ $(function () {
 
   $("#tamanho_vetor_intermediario").ionRangeSlider({
     min: 1,
-    max: 10,
+    max: 20,
     from: 3,
     type: 'single',
     step: 1,
