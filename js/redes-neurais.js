@@ -100,12 +100,6 @@ $(function () {
       error: function() {
         $("#resultado").removeClass("hide");
         $("#letra-resultado").text('Desconhecida.');
-      },
-      beforeSend: function(){
-        abreModalCarregando();
-      },
-      complete: function(){
-        fechaModalCarregando();
       }
     });
   };
