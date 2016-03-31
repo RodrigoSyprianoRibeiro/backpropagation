@@ -174,20 +174,20 @@ $(function () {
   };
 
   $("#quantidade_geracoes").ionRangeSlider({
-    min: 1,
+    min: 0,
     max: 100,
-    from: 20,
+    from: 50,
     type: 'single',
-    step: 1,
+    step: 5,
     postfix: " gerações",
     prettify: false,
     hasGrid: true
   });
 
   $("#tamanho_vetor_intermediario").ionRangeSlider({
-    min: 1,
-    max: 20,
-    from: 3,
+    min: 0,
+    max: 15,
+    from: 5,
     type: 'single',
     step: 1,
     postfix: " posições",
@@ -196,11 +196,11 @@ $(function () {
   });
 
   $("#taxa_aprendizagem").ionRangeSlider({
-    min: 10,
+    min: 0,
     max: 100,
     from: 20,
     type: 'single',
-    step: 10,
+    step: 1,
     postfix: " %",
     prettify: false,
     hasGrid: true
