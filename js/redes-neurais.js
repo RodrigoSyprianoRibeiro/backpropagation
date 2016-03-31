@@ -175,10 +175,10 @@ $(function () {
 
   $("#quantidade_geracoes").ionRangeSlider({
     min: 0,
-    max: 100,
-    from: 50,
+    max: 200,
+    from: 100,
     type: 'single',
-    step: 5,
+    step: 10,
     postfix: " gerações",
     prettify: false,
     hasGrid: true
@@ -186,8 +186,8 @@ $(function () {
 
   $("#tamanho_vetor_intermediario").ionRangeSlider({
     min: 0,
-    max: 15,
-    from: 5,
+    max: 20,
+    from: 10,
     type: 'single',
     step: 1,
     postfix: " posições",
@@ -200,7 +200,7 @@ $(function () {
     max: 100,
     from: 20,
     type: 'single',
-    step: 1,
+    step: 10,
     postfix: " %",
     prettify: false,
     hasGrid: true
