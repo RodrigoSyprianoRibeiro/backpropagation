@@ -36,7 +36,7 @@ class Util
         foreach ($arquivos AS $arquivo) {
             echo "<pre>";
             print_r($arquivo->getNome());
-            if ($arquivo->getNome() == $letra.".txt") {
+            if ($arquivo->getNome() == $letra) {
                 return $arquivo->getConteudo();
             }
         }
@@ -49,20 +49,17 @@ class Util
         $diretorio = dir($path);
 
         $listaArquivos = array();
-        $count = 0;
 
         while($arquivo = $diretorio->read()){
-
-            if ($count >= 2) {
                 $nome = "".$arquivo;
-                $caminhoCompleto = $path.$arquivo;
-                $arquivo = new Arquivo();
-                $arquivo->setNome($nome);
-                $arquivo->setCaminho($caminhoCompleto);
-                $arquivo->setConteudo();
-                array_push($listaArquivos, $arquivo);
-            }
-            $count++;
+                if (strpos($nome, '.txt') !== false) {
+                    $caminhoCompleto = $path.$arquivo;
+                    $arquivo = new Arquivo();
+                    $arquivo->setNome(str_replace('.txt', '', $nome));
+                    $arquivo->setCaminho($caminhoCompleto);
+                    $arquivo->setConteudo();
+                    array_push($listaArquivos, $arquivo);
+                }
         }
         $diretorio -> close();
 
