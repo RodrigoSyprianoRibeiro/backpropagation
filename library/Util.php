@@ -31,6 +31,16 @@ class Util
         return $arquivo->getConteudo();
     }
 
+    public static function getLetraPorNome($letra) {
+        $arquivos = self::getArquivos();
+        foreach ($arquivos AS $arquivo) {
+            if ($arquivo->getNome() == $letra.".txt") {
+                return $arquivo->getConteudo();
+            }
+        }
+        return null;
+    }
+
     public static function getArquivos() {
 
         $path = "../letras/";

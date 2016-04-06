@@ -59,154 +59,75 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-<!--                    <ul id="tab1" class="nav nav-tabs">
-                        <li class="active"><a href="#tab1-item1" data-toggle="tab">Sistema</a></li>
-                        <li><a href="#tab1-item2" data-toggle="tab">Código</a></li>
-                        <li><a href="#tab1-item3" data-toggle="tab">Sobre</a></li>
-                        <li><a href="#tab1-item4" data-toggle="tab">Log</a></li>
-                    </ul>-->
-<!--                    <div class="tab-content">
-                        <div class="tab-pane fade active in" id="tab1-item1">-->
-                            <div class="col-sm-3 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <form id="parametros">
-                                    <div class="form-group">
-                                        <div class="knob-label">Quantidade de gerações</div>
-                                        <input type="text" id="quantidade_geracoes" name="quantidade_geracoes" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="knob-label">Tamanho vetor intermediário</div>
-                                        <input type="text" id="tamanho_vetor_intermediario" name="tamanho_vetor_intermediario" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="knob-label">% Taxa de aprendizagem</div>
-                                        <input type="text" id="taxa_aprendizagem" name="taxa_aprendizagem" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="button" id="treinar" class="btn btn-lg btn-success">Efetuar treinamento</button>
-                                    </div>
-                                </form>
+                    <div class="col-sm-3 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <form id="parametros">
+                            <div class="form-group">
+                                <div class="knob-label">Quantidade de gerações</div>
+                                <input type="text" id="quantidade_geracoes" name="quantidade_geracoes" value="" />
                             </div>
-                            <div class="col-sm-6 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h2>Reconhecer letra abaixo:</h2>
-                                <div class="row">
-                                    Inserir caracter:
-                                    <input type="radio" name="simbolo" value="#" checked="true" disabled> #
-                                    <input type="radio" name="simbolo" value="." disabled> .
-                                    <input type="radio" name="simbolo" value="@" disabled> @
-                                </div>
-                                <div class="row margin-bottom">
-                                    <div id="quadro"></div>
-                                </div>
+                            <div class="form-group">
+                                <div class="knob-label">Tamanho vetor intermediário</div>
+                                <input type="text" id="tamanho_vetor_intermediario" name="tamanho_vetor_intermediario" value="" />
                             </div>
-                            <div class="col-sm-3 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="row">
-                                    <button type="button" id="gerar-letra" class="btn btn-lg btn-primary margin-bottom disabled"><i class="fa fa-refresh"></i> Gerar Letra</button>
-                                </div>
-                                <div class="row">
-                                    <button type="button" id="reconhecer-letra" class="btn btn-lg btn-success disabled"><i class="fa fa-flask"></i> Reconhecer letra</button>
-                                </div>
-                                <div id="resultado" class="row text-center hide">
-                                    <h2>Letra ao lado é:</h2>
-                                    <h1 id="letra-resultado"></h1>
-                                </div>
+                            <div class="form-group">
+                                <div class="knob-label">% Taxa de aprendizagem</div>
+                                <input type="text" id="taxa_aprendizagem" name="taxa_aprendizagem" value="" />
                             </div>
-                        <!--</div>-->
-<!--                        <div class="tab-pane fade" id="tab1-item2">
-                            <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h2 class="page-header">Código <strong>Fonte</strong></h2>
-                                <div class="col-md-12">
-                                    <ul id="tab2" class="nav nav-tabs">
-                                        <li class="active"><a href="#tab2-item1" data-toggle="tab">HTML</a></li>
-                                        <li><a href="#tab2-item2" data-toggle="tab">CSS</a></li>
-                                        <li><a href="#tab2-item3" data-toggle="tab">JS</a></li>
-                                        <li><a href="#tab2-item4" data-toggle="tab">executar.php</a></li>
-                                        <li><a href="#tab2-item5" data-toggle="tab">AlgoritmosGeneticos.php</a></li>
-                                        <li><a href="#tab2-item6" data-toggle="tab">Cromossomo.php</a></li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade active in" id="tab2-item1">
-                                            <pre><code data-language="html"><?php include 'docs/html.txt'; ?><</code></pre>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2-item2">
-                                            <pre><code data-language="css"><?php include 'docs/css.txt'; ?></code></pre>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2-item3">
-                                            <pre><code data-language="javascript"><?php include 'docs/js.txt'; ?></code></pre>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2-item4">
-                                            <pre><code data-language="php"><?php include 'docs/executar.txt'; ?></code></pre>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2-item5">
-                                            <pre><code data-language="php"><?php include 'docs/algoritmosgeneticos.txt'; ?></code></pre>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2-item6">
-                                            <pre><code data-language="php"><?php include 'docs/cromossomo.txt'; ?></code></pre>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <button type="button" id="treinar" class="btn btn-lg btn-success">Efetuar treinamento</button>
                             </div>
-                        </div>-->
-<!--                        <div class="tab-pane fade" id="tab1-item3">
-                            <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h2 class="page-header">Sobre o Desafio <strong>8 Rainhas</strong></h2>
-                                <blockquote>
-                                    <p>O desafio das 8 Rainhas tem como objetivo posicionar oito rainhas
-                                    em um tabuleiro de xadrez de modo que nenhuma delas ataque nenhuma outra rainha.
-                                    Será baseado nas propriedades da rainha de um jogo de xadrez.</p>
-
-                                    <p>Podemos buscar uma solução eficiente para o problema estudando as propriedades
-                                    das rainhas. Uma das propriedades da rainha é que não pode haver outra rainha na
-                                    linha ou na coluna onde esta se encontra. Assim, na construção do algoritmo de
-                                    solução, não tentaremos posicionar uma rainha em uma posição que esteja sendo atacada.
-                                    Esta mesma propriedade também vale para as diagonais em relação as rainha já posicionadas.</p>
-                                </blockquote>
-                            </div>
-                            <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h2 class="page-header">Algoritmos <strong>Genéticos</strong></h2>
-                                <blockquote>
-                                    <p>Para resolver o problema foi utilizada as técnicas dos <b>Algoritmos Genéticos</b>.
-                                    São algoritmos de busca baseados nos mecanismos de seleção natural e genética.</p>
-
-                                    <p>Componentes dos <b>Algoritmos Genéticos:</b>
-                                    <ul>
-                                        <li>Representação (definição dos indivíduos)</li>
-                                        <li>Função de avaliação (função fitness)</li>
-                                        <li>População</li>
-                                        <li>Mecanismo de seleção dos pais</li>
-                                        <li>Operadores genéticos</li>
-                                        <li>Mecanismo de seleção dos sobreviventes</li>
-                                    </ul>
-                                    </p>
-
-                                    <p><b>Representação</b> foi utilizado um vetor com 8 posições, onde o índice do vetor, representa a coluna
-                                    e o valor representa a linha no tabuleiro. <b>Ex.: [2, 3, 5, 7, 1, 0, 6, 4]</b>.</p>
-
-                                    <p><b>Função de avaliação</b> é verificado quantos conflitos de rainhas existem no tabuleiro.
-                                    Quanto menor o número de conflitos, melhor a aptidão do cromossomo.</p>
-
-                                    <p><b>Mecanismo de seleção dos pais</b>, é utilizada a forma <b>Eletista</b>, onde sempre pega os melhores indivíduos.</p>
-
-                                    <p><b>Operadores genéticos</b> foi utilizado a técnica <b>Cut-and-crossfill</b> para <b>Recombinação</b> e a
-                                    técnica de <b>Swap</b> para <b>Mutação</b>.</p>
-                                </blockquote>
-                            </div>
-                            <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h2 class="page-header"><strong>Autores</strong></h2>
-                                <blockquote>
-                                    <p>Rodrigo Ribeiro e Taynara Rechia.</p>
-
-                                    <footer>Trabalho da disciplina <cite title="Modelos Evolucionários e Tratamento de Incertezas">Modelos Evolucionários e Tratamento de Incertezas</cite>
-                                    do curso de Ciência da Computação da UNISUL (Universidade do Sul de Santa Catarina).</footer>
-                                </blockquote>
-                            </div>
-                        </div>-->
-<!--                        <div class="tab-pane fade" id="tab1-item4">
-                            <div class="col-sm-12 wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h2 class="page-header">Log de <strong>Testes</strong></h2>
-                                <pre><code id="log" data-language="shell"></code></pre>
-                            </div>
-                        </div>-->
-                    <!--</div>-->
+                        </form>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Reconhecer letra abaixo:</h2>
+                        <div class="row">
+                            Inserir caracter:
+                            <input type="radio" name="simbolo" value="#" checked="true" disabled> #
+                            <input type="radio" name="simbolo" value="." disabled> .
+                            <input type="radio" name="simbolo" value="@" disabled> @
+                        </div>
+                        <div class="row margin-bottom">
+                            <div id="quadro"></div>
+                        </div>
+                        <div class="row">
+                            <select id="letra" name="letra" disabled>
+                                <option value="">-- Selecione uma letra --</option>
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="A3">A3</option>
+                                <option value="B1">B1</option>
+                                <option value="B2">B2</option>
+                                <option value="B3">B3</option>
+                                <option value="C1">C1</option>
+                                <option value="C2">C2</option>
+                                <option value="C3">C3</option>
+                                <option value="D1">D1</option>
+                                <option value="D2">D2</option>
+                                <option value="D3">D3</option>
+                                <option value="E1">E1</option>
+                                <option value="E2">E2</option>
+                                <option value="E3">E3</option>
+                                <option value="J1">J1</option>
+                                <option value="J2">J2</option>
+                                <option value="J3">J3</option>
+                                <option value="K1">K1</option>
+                                <option value="K2">K2</option>
+                                <option value="K3">K3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 wow fadeIn text-center padding" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="row">
+                            <button type="button" id="gerar-letra" class="btn btn-lg btn-primary margin-bottom disabled"><i class="fa fa-refresh"></i> Gerar Letra</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" id="reconhecer-letra" class="btn btn-lg btn-success disabled"><i class="fa fa-flask"></i> Reconhecer letra</button>
+                        </div>
+                        <div id="resultado" class="row text-center hide">
+                            <h2>Letra ao lado é:</h2>
+                            <h1 id="letra-resultado"></h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

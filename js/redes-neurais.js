@@ -31,7 +31,7 @@ $(function () {
     });
   };
 
-    // Ação do botão "Gerar letra" 
+  // Ação do botão "Gerar letra" 
   $(document).on('click', '#gerar-letra', function(e){
     e.preventDefault();
     gerarLetra();
@@ -46,10 +46,28 @@ $(function () {
         montaTabuleiro(response);
       },
       beforeSend: function(){
+        $("#letra").val("");
         $("#resultado").addClass("hide");
       }
     });
   };
+
+ // Ação do select "Selecionar letra" 
+  $("#letra").change(function() {
+    $.ajax({
+      dataType: "json",
+      type: 'POST',
+      url: 'library/selecionarLetra.php',
+      async: true,
+      data: {letra: $("#letra").val()},
+      success: function(response) {
+        montaTabuleiro(response);
+      },
+      beforeSend: function(){
+        $("#resultado").addClass("hide");
+      }
+    });
+  });
 
   function montaTabuleiro(vetor) {
     var count = 0;
@@ -122,13 +140,7 @@ $(function () {
     $("#gerar-letra").removeClass("disabled");
     $("#reconhecer-letra").removeClass("disabled");
     $("input[name=simbolo]").prop("disabled", false);
-    $(".celula").removeClass("celula-disabled");
-  }
-
-  function habilitarBotoes() {
-    $("#gerar-letra").removeClass("disabled");
-    $("#reconhecer-letra").removeClass("disabled");
-    $("input[name=simbolo]").prop("disabled", false);
+    $("#letra").prop("disabled", false);
     $(".celula").removeClass("celula-disabled");
   }
 
@@ -136,6 +148,7 @@ $(function () {
     $("#gerar-letra").addClass("disabled");
     $("#reconhecer-letra").addClass("disabled");
     $("input[name=simbolo]").prop("disabled", true);
+    $("#letra").prop("disabled", true);
     $(".celula").addClass("celula-disabled");
     $("#resultado").addClass("hide");
   }
