@@ -113,7 +113,6 @@ $(function () {
       success: function(response) {
         if (response !== false) {
             letra = response;
-            $.playSound('mp3/acertou');
         } else {
             letra = 'Desconhecida';
             $.playSound('mp3/errou');
