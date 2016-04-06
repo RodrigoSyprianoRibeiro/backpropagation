@@ -34,8 +34,6 @@ class Util
     public static function getLetraPorNome($letra) {
         $arquivos = self::getArquivos();
         foreach ($arquivos AS $arquivo) {
-            echo "<pre>";
-            print_r($arquivo->getNome());
             if ($arquivo->getNome() == $letra) {
                 return $arquivo->getConteudo();
             }
