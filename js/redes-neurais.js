@@ -111,11 +111,18 @@ $(function () {
       async: true,
       data: {letra: getLetra()},
       success: function(response) {
-        letra = (response !== false) ? response : 'Desconhecida';
+        if (response !== false) {
+            letra = response;
+            $.playSound('mp3/acertou');
+        } else {
+            letra = 'Desconhecida';
+            $.playSound('mp3/errou');
+        }
         $("#resultado").removeClass("hide");
         $("#letra-resultado").text(letra);
       },
       error: function() {
+        $.playSound('mp3/errou');
         $("#resultado").removeClass("hide");
         $("#letra-resultado").text('Desconhecida.');
       },

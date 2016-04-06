@@ -14,7 +14,6 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/ionslider/ion.rangeSlider.css" rel="stylesheet">
     <link href="css/ionslider/ion.rangeSlider.skinNice.css" rel="stylesheet">
-    <link href="css/rainbow/blackboard.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -156,14 +155,8 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/bootbox.js"></script>
+    <script type="text/javascript" src="js/jquery.playSound.js"></script>
     <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
     <script type="text/javascript" src="js/redes-neurais.js"></script>
-    <script type="text/javascript" src="js/rainbow/rainbow.min.js"></script>
-    <script type="text/javascript" src="js/rainbow/language/css.js"></script>
-    <script type="text/javascript" src="js/rainbow/language/generic.js"></script>
-    <script type="text/javascript" src="js/rainbow/language/html.js"></script>
-    <script type="text/javascript" src="js/rainbow/language/javascript.js"></script>
-    <script type="text/javascript" src="js/rainbow/language/php.js"></script>
-    <script type="text/javascript" src="js/rainbow/language/shell.js"></script>
 </body>
 </html>
