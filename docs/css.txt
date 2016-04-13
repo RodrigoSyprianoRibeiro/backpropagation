@@ -1,0 +1,24 @@
+#quadro {
+  width: auto;
+}
+#tabuleiro {
+  border: 1px solid gainsboro;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tabuleiro td {
+  width: 25px;
+  height: 25px;
+  border: 1px solid gainsboro;
+}
+.celula {
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bolder;
+}
+.celula-disabled {
+  background-color: #D3D3D3;
+}
