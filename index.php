@@ -35,7 +35,7 @@
                 <div class="col-sm-12 overflow">
                    <div class="social-icons pull-right">
                         <ul class="nav nav-pills">
-                            <li><a href="https://github.com/RodrigoSyprianoRibeiro/8rainhas" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://github.com/RodrigoSyprianoRibeiro/backpropagation" target="_blank"><i class="fa fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
