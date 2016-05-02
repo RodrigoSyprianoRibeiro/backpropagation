@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul id="tab1" class="nav nav-tabs">
-                            <li class="active"><a href="#tab1-item1" data-toggle="tab">Mochila</a></li>
+                            <li class="active"><a href="#tab1-item1" data-toggle="tab">Execução</a></li>
                             <li><a href="#tab1-item2" data-toggle="tab">Código</a></li>
                             <li><a href="#tab1-item3" data-toggle="tab">Sobre</a></li>
                         </ul>
